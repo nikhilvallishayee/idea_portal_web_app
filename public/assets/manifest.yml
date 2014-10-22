@@ -7,6 +7,10 @@ glyphicons-halflings-regular.ttf: glyphicons-halflings-regular-b7248b70474d970f5
 glyphicons-halflings-regular/index.ttf: glyphicons-halflings-regular-b7248b70474d970f596df264c4f9b5ab.ttf
 glyphicons-halflings-regular.woff: glyphicons-halflings-regular-c866ecc8bb1c848e2a8557b67499891d.woff
 glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular-c866ecc8bb1c848e2a8557b67499891d.woff
+5.png: 5-dd5452185b32e288f597bf893c974227.png
+5/index.png: 5-dd5452185b32e288f597bf893c974227.png
+6.png: 6-57a73dfab8832cbf35fceccdadaa3508.png
+6/index.png: 6-57a73dfab8832cbf35fceccdadaa3508.png
 bg/divider1.jpg: bg/divider1-d2fbefa7f68a4cb477d14f4310281401.jpg
 bg/divider1/index.jpg: bg/divider1-d2fbefa7f68a4cb477d14f4310281401.jpg
 bg/divider2.jpg: bg/divider2-249698b1f8510413cbeaa00c5af19fb6.jpg
@@ -21,6 +25,64 @@ header_bg.jpg: header_bg-2d266a82cd8afeb7276dcc110d4e5bad.jpg
 header_bg/index.jpg: header_bg-2d266a82cd8afeb7276dcc110d4e5bad.jpg
 iphone.png: iphone-6c41dc6fdb8da9e0be17c3978e402f65.png
 iphone/index.png: iphone-6c41dc6fdb8da9e0be17c3978e402f65.png
+logo/Artwork-1.png: logo/Artwork-1-142ff1c54ed4c2e5c99d4de413d71786.png
+logo/Artwork-1/index.png: logo/Artwork-1-142ff1c54ed4c2e5c99d4de413d71786.png
+logo/Artwork-10.png: logo/Artwork-10-ec6d938e2c4efb4d20982982a2d905cf.png
+logo/Artwork-10/index.png: logo/Artwork-10-ec6d938e2c4efb4d20982982a2d905cf.png
+logo/Artwork-11.png: logo/Artwork-11-cb3cc79a73f14844ac8c3b823a2b951f.png
+logo/Artwork-11/index.png: logo/Artwork-11-cb3cc79a73f14844ac8c3b823a2b951f.png
+logo/Artwork-12.png: logo/Artwork-12-a7531773835078a099f6293769755442.png
+logo/Artwork-12/index.png: logo/Artwork-12-a7531773835078a099f6293769755442.png
+logo/Artwork-2.png: logo/Artwork-2-59e64184c71005b4cbb294c3ef1e910e.png
+logo/Artwork-2/index.png: logo/Artwork-2-59e64184c71005b4cbb294c3ef1e910e.png
+logo/Artwork-3.png: logo/Artwork-3-14474413a2d8c24598701587a52bc5a9.png
+logo/Artwork-3/index.png: logo/Artwork-3-14474413a2d8c24598701587a52bc5a9.png
+logo/Artwork-4.png: logo/Artwork-4-9458ed26b84d01554897e71a8ce7bb10.png
+logo/Artwork-4/index.png: logo/Artwork-4-9458ed26b84d01554897e71a8ce7bb10.png
+logo/Artwork-5.png: logo/Artwork-5-9c58f88ccf1d12580fb3a42949177c19.png
+logo/Artwork-5/index.png: logo/Artwork-5-9c58f88ccf1d12580fb3a42949177c19.png
+logo/Artwork-7.png: logo/Artwork-7-5254e0ad4475e6f0a661af558c9472a0.png
+logo/Artwork-7/index.png: logo/Artwork-7-5254e0ad4475e6f0a661af558c9472a0.png
+logo/Artwork-8.png: logo/Artwork-8-12e3320c9813bc5736653e41f5efc716.png
+logo/Artwork-8/index.png: logo/Artwork-8-12e3320c9813bc5736653e41f5efc716.png
+logo/Artwork-9.png: logo/Artwork-9-24b7de8282a06f3938a18c78f8768853.png
+logo/Artwork-9/index.png: logo/Artwork-9-24b7de8282a06f3938a18c78f8768853.png
+logo/Artworks solar-01.eps: logo/Artworks solar-01-4fa58496bbeced235c795209919581c6.eps
+logo/Artworks solar-01/index.eps: logo/Artworks solar-01-4fa58496bbeced235c795209919581c6.eps
+logo/Artworks solar-02.eps: logo/Artworks solar-02-64a0c86852eab68bfe60ac30ac9a242d.eps
+logo/Artworks solar-02/index.eps: logo/Artworks solar-02-64a0c86852eab68bfe60ac30ac9a242d.eps
+logo/Artworks solar-03.eps: logo/Artworks solar-03-5d0d48fa9c1f80f13d6bbefa96dcd615.eps
+logo/Artworks solar-03/index.eps: logo/Artworks solar-03-5d0d48fa9c1f80f13d6bbefa96dcd615.eps
+logo/Artworks solar-04.eps: logo/Artworks solar-04-ccfad9f11901d5813b6e1a11ef9c518e.eps
+logo/Artworks solar-04/index.eps: logo/Artworks solar-04-ccfad9f11901d5813b6e1a11ef9c518e.eps
+logo/Artworks solar-05.eps: logo/Artworks solar-05-86545b687e26896be4d4ddd4b1e6a7a6.eps
+logo/Artworks solar-05/index.eps: logo/Artworks solar-05-86545b687e26896be4d4ddd4b1e6a7a6.eps
+logo/Artworks solar-06.eps: logo/Artworks solar-06-dc2a95296c24344276cf60c74bfb6097.eps
+logo/Artworks solar-06/index.eps: logo/Artworks solar-06-dc2a95296c24344276cf60c74bfb6097.eps
+logo/Artworks solar.ai: logo/Artworks solar-6fb98969ddd3d1958cf6d5369e2f4a50.ai
+logo/Artworks solar/index.ai: logo/Artworks solar-6fb98969ddd3d1958cf6d5369e2f4a50.ai
+logo/Artworks solar.eps: logo/Artworks solar-3526197d1aa945eb793ddf9f92dbfb87.eps
+logo/Artworks solar/index.eps: logo/Artworks solar-3526197d1aa945eb793ddf9f92dbfb87.eps
+logo/Artworks-01.eps: logo/Artworks-01-a53e345777163ce874a791dbf5a5bdf0.eps
+logo/Artworks-01/index.eps: logo/Artworks-01-a53e345777163ce874a791dbf5a5bdf0.eps
+logo/Artworks-02.eps: logo/Artworks-02-f090b9b6f67ede0643d5b86a014550d4.eps
+logo/Artworks-02/index.eps: logo/Artworks-02-f090b9b6f67ede0643d5b86a014550d4.eps
+logo/Artworks-03.eps: logo/Artworks-03-70991b0faab71fbf90dcf95795c1b04e.eps
+logo/Artworks-03/index.eps: logo/Artworks-03-70991b0faab71fbf90dcf95795c1b04e.eps
+logo/Artworks-04.eps: logo/Artworks-04-b13aafd5e0182ca6d1266a71c20fd59d.eps
+logo/Artworks-04/index.eps: logo/Artworks-04-b13aafd5e0182ca6d1266a71c20fd59d.eps
+logo/Artworks-05.eps: logo/Artworks-05-2b8cd66b3910a5a39eb0ee035e9594b2.eps
+logo/Artworks-05/index.eps: logo/Artworks-05-2b8cd66b3910a5a39eb0ee035e9594b2.eps
+logo/Artworks-06.eps: logo/Artworks-06-68a59794310072fd1a5cf1721ad6f48b.eps
+logo/Artworks-06/index.eps: logo/Artworks-06-68a59794310072fd1a5cf1721ad6f48b.eps
+logo/Artworks.ai: logo/Artworks-b3798aeee8e565adc9f60b3dc025d2de.ai
+logo/Artworks/index.ai: logo/Artworks-b3798aeee8e565adc9f60b3dc025d2de.ai
+logo/Artworks.eps: logo/Artworks-e1e5ed6ab7244887f1c3fd6166426710.eps
+logo/Artworks/index.eps: logo/Artworks-e1e5ed6ab7244887f1c3fd6166426710.eps
+logo/blue_black.png: logo/blue_black-f1a1c198d594558861bae306b1237943.png
+logo/blue_black/index.png: logo/blue_black-f1a1c198d594558861bae306b1237943.png
+logo/favicon.ico: logo/favicon-fa6ffa6a3d8ea718d48f1b556e15244c.ico
+logo/favicon/index.ico: logo/favicon-fa6ffa6a3d8ea718d48f1b556e15244c.ico
 macbook.png: macbook-b33aa279127ec138d90ded7950378472.png
 macbook/index.png: macbook-b33aa279127ec138d90ded7950378472.png
 portfolio/folio01.jpg: portfolio/folio01-3153d2ca2400c06278962b3adcb5643f.jpg
@@ -41,6 +103,18 @@ portfolio/folio08.jpg: portfolio/folio08-b9a231e409fd7aeae1aa35ff4f06d44b.jpg
 portfolio/folio08/index.jpg: portfolio/folio08-b9a231e409fd7aeae1aa35ff4f06d44b.jpg
 portfolio/folio09.jpg: portfolio/folio09-b37f75202b861ca05852f683f60ffb73.jpg
 portfolio/folio09/index.jpg: portfolio/folio09-b37f75202b861ca05852f683f60ffb73.jpg
+portfolio/gkmit.png: portfolio/gkmit-88497c72581b45930ad74fb47063364d.png
+portfolio/gkmit/index.png: portfolio/gkmit-88497c72581b45930ad74fb47063364d.png
+portfolio/reshotel.png: portfolio/reshotel-aa5a1b3f239785788321808698fa2f0b.png
+portfolio/reshotel/index.png: portfolio/reshotel-aa5a1b3f239785788321808698fa2f0b.png
+portfolio/varunaiyer.png: portfolio/varunaiyer-d544242f82f30c502bc348ff166ff999.png
+portfolio/varunaiyer/index.png: portfolio/varunaiyer-d544242f82f30c502bc348ff166ff999.png
+team/nikhil.jpg: team/nikhil-e145c96e628edb785fb898b239080a72.jpg
+team/nikhil/index.jpg: team/nikhil-e145c96e628edb785fb898b239080a72.jpg
+team/ronak.jpg: team/ronak-958563dc74b5d9286cf5ca0b5f89ddca.jpg
+team/ronak/index.jpg: team/ronak-958563dc74b5d9286cf5ca0b5f89ddca.jpg
+team/sahu.jpg: team/sahu-42cbeddb61fd9846b28d4b79ca381298.jpg
+team/sahu/index.jpg: team/sahu-42cbeddb61fd9846b28d4b79ca381298.jpg
 team/team01.jpg: team/team01-9bc75fc0c61e678340dc16ac27c4d4fa.jpg
 team/team01/index.jpg: team/team01-9bc75fc0c61e678340dc16ac27c4d4fa.jpg
 team/team02.jpg: team/team02-b777b9b39fcac886d3a14280db51e41e.jpg
@@ -49,10 +123,12 @@ team/team03.jpg: team/team03-c18217cad38ed2186000e440ebca0dd4.jpg
 team/team03/index.jpg: team/team03-c18217cad38ed2186000e440ebca0dd4.jpg
 team/team04.jpg: team/team04-bc0032590eb5dd5877694e09ed951bd2.jpg
 team/team04/index.jpg: team/team04-bc0032590eb5dd5877694e09ed951bd2.jpg
-application.js: application-52e04b5a7447c0703842c60232bc6488.js
-application/index.js: application-52e04b5a7447c0703842c60232bc6488.js
-application.css: application-15921a2629b1f6b214755cd8f61686dd.css
-application/index.css: application-15921a2629b1f6b214755cd8f61686dd.css
+team/varuna.jpg: team/varuna-a61b6380e9a3563a14766db81357c82b.jpg
+team/varuna/index.jpg: team/varuna-a61b6380e9a3563a14766db81357c82b.jpg
+application.js: application-9c1f13238b763b4c3b58a18c111058ad.js
+application/index.js: application-9c1f13238b763b4c3b58a18c111058ad.js
+application.css: application-ffc5e5387a3b05d3f92ae6d706c8f44f.css
+application/index.css: application-ffc5e5387a3b05d3f92ae6d706c8f44f.css
 icomoon/icomoon-.eot: icomoon/icomoon--3ccc6acadd3054070a52fe68ffb971b9.eot
 icomoon/icomoon-/index.eot: icomoon/icomoon--3ccc6acadd3054070a52fe68ffb971b9.eot
 icomoon/icomoon.eot: icomoon/icomoon-3ccc6acadd3054070a52fe68ffb971b9.eot
