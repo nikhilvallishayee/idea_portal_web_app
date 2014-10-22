@@ -42,7 +42,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="53" selection-start="10676" selection-end="10676" vertical-scroll-proportion="0.27552986">
+            <state line="420" column="126" selection-start="20043" selection-end="20043" vertical-scroll-proportion="0.5356455">
               <folding>
                 <element signature="n#style#0;n#span#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -748,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="53" selection-start="10676" selection-end="10676" vertical-scroll-proportion="0.27552986">
+        <state line="420" column="126" selection-start="20043" selection-end="20043" vertical-scroll-proportion="0.5356455">
           <folding>
             <element signature="n#style#0;n#span#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#h1#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
