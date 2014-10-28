@@ -1,4 +1,29 @@
-== Welcome to Rails
+== WebApp Readme
+The IdeaPortal webapp will showcase a private social exchange systems that augments
+and facilitates seamless growing, learning and collaboration in a fully versioned,
+showcased and editable manner.
+
+Core Models
+
+Being Class
+Stimulus and Response Classes
+Goal and Personal Attributes of the Being Class
+
+Community Class and Social Exchanges
+Social exchange systems between a collection of Beings
+Exchange of Ideas, Work, Assets, Help, Knowledge and Energy
+Monitoring of emerging patterns and behaviour
+Optimizing Community attributes and interactions for seamless exchangie
+Blogs, Audiocasts and videocasts
+vVoIP - and other monitored realtime augmented discussion platforms
+sandboxed communities curation
+
+
+== IdeaPortal Readme
+IdeaPortal establishes an augmented technical platform to collaborate and engineer value across time-space
+
+
+== Rails Readme
 
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
