@@ -12,8 +12,8 @@ function getLatestBlogs(){
 		    console.log(data.blogs);
 			    	
           	$.each(data.blogs, function(index, blog) {
-          		var clone_blog=$("#blog_template").clone();
-				clone_blog.removeClass("hidden");
+          	var clone_blog=$("#blog_template").clone();
+				    clone_blog.removeClass("hidden");
 	       		clone_blog.attr('id',"blog_"+blog.id);
           			
 		      	clone_blog.find('.blog-title').html(blog.title);		

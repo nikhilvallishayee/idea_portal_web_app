@@ -1,7 +1,11 @@
 IdeaPortalWebApp::Application.routes.draw do
+  get "beings/latestIndex"
+
   get "blog/recentIndex"
 
   root :to => 'home#index'
+
+  resources :beings
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

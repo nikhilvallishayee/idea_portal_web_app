@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141031105838) do
+ActiveRecord::Schema.define(:version => 20141031120250) do
+
+  create_table "beings", :force => true do |t|
+    t.string   "name"
+    t.text     "short_description"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "link_facebook"
+    t.string   "link_twitter"
+    t.string   "link_flickr"
+    t.string   "image_url"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string   "is_team_member"
+  end
 
   create_table "blogs", :force => true do |t|
     t.string   "title"

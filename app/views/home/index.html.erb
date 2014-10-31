@@ -209,7 +209,8 @@
 <!-- ==== TEAM MEMBERS ==== -->
 <div class="container" id="team" name="team">
   <br>
-  <div class="row white centered">
+  <!-- ==Static Team description hidden== -->
+  <div class="row white centered hidden">
     <h1 class="centered">The Core Collaborative</h1>
     <hr>
     <br>
@@ -263,9 +264,9 @@
       <a href="#" class="icon icon-flickr"></a>
       <p> Varuna is a designer, art enthusiast, philosopher, traveler, explorer and a lover of life. Believing graphic design to be a symphony of aesthetics and storytelling, she brings out her attempts via print and web designs. For over three years, she has been imbuing her passion for love and love of life into her creatives that are helping define the face of modern web products. </p>
     </div><!-- col-lg-3 -->
-
-
   </div><!-- row -->
+  <!-- == Dynamic Description of Team == -->
+  <%= render 'being' %>
 </div><!-- container -->
 
 <!-- ==== SECTION DIVIDER3 -->
