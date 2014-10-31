@@ -37,6 +37,7 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     arel (3.0.3)
+    bcrypt (3.1.9)
     builder (3.0.4)
     capistrano (3.1.0)
       i18n
@@ -48,6 +49,10 @@ GEM
     capistrano-rails (1.1.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    clearance (1.4.3)
+      bcrypt
+      email_validator (~> 1.4)
+      rails (>= 3.1)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -56,6 +61,8 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.7.3)
+    email_validator (1.4.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.2.1)
     hike (1.2.3)
@@ -137,6 +144,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.1.2)
   capistrano-rails (~> 1.1.1)
   capistrano-rvm!
+  clearance
   coffee-rails (~> 3.2.1)
   jquery-rails
   mysql2
