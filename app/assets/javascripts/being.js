@@ -33,3 +33,6 @@ function getLatestBeingInstances(){
 
     });
 }
+function signUp(){
+    $('#new').removeClass('hidden')
+}

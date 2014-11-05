@@ -6,6 +6,7 @@ IdeaPortalWebApp::Application.routes.draw do
   root :to => 'home#index'
 
   resources :beings
+  resources :dashboard
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

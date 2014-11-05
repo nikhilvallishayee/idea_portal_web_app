@@ -23,11 +23,13 @@ class BeingsController < ApplicationController
     @being = Being.new(params[:beings])
    
   	if @being.save
-  	    render :json => { 
-  	        :status => :ok, 
-  	        :message => "Success!",
-  	        :being => @being
-  	    }.to_json
+  	     # render :json => { 
+  	     #     :status => :ok, 
+  	     #     :message => "Success!",
+  	     #     :being => @being
+  	     # }.to_json
+         redirect_to url_for(:controller => :dashboard, :action => :index)
+        # render @dashboard
   	else 
   	    render :json => { 
   		    :status => :unprocessable_entity, 
@@ -37,3 +39,4 @@ class BeingsController < ApplicationController
     end
   end
 end
+
