@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  def recentIndex
+  def index
   	@blogs = Blog.last(2)
   	render :json =>{
   		:status => :ok,

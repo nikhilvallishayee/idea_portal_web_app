@@ -1,7 +1,7 @@
 IdeaPortalWebApp::Application.routes.draw do
-  get "beings/latestIndex"
+  get "beings/index"
 
-  get "blogs/recentIndex"
+  get "blogs/index"
 
   root :to => 'home#index'
 
@@ -16,9 +16,8 @@ IdeaPortalWebApp::Application.routes.draw do
   get '/sign_in' => 'sessions#new', as: 'sign_in'
   post '/sign_in' => 'sessions#create', as: 'sign_in'
   delete '/sign_out' => 'sessions#destroy', as: 'sign_out'
-  if Clearance.configuration.allow_sign_up?
-    get '/sign_up' => 'beings#index', as: 'sign_up'
-  end
+
+    get '/sign_up' => 'beings#new', as: 'sign_up'
   
 
   # The priority is based upon order of creation:
@@ -69,7 +68,7 @@ IdeaPortalWebApp::Application.routes.draw do
   #   end
 
   # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.erb.
+  # just remember to delete public/new.html.erb.
   # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"

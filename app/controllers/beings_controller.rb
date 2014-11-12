@@ -1,6 +1,10 @@
 class BeingsController < ApplicationController
   before_filter :add_user ,:only => :create
-  def latestIndex
+  def new
+  end
+
+
+  def index
   	@beings = Being.last(5)
     render :json =>{
   		:status => :ok,

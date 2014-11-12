@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class BlogControllerTest < ActionController::TestCase
-  test "should get recentIndex" do
-    get :recentIndex
+  test "should get index" do
+    get :index
     assert_response :success
   end
 

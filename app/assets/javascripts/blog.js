@@ -7,7 +7,7 @@ $("document").ready(function(){
 });
 function getLatestBlogs(){
 	$.ajax({
-        url : '/blogs/recentIndex',
+        url : '/blogs/index',
         type: "GET",
         format: "JSON",
         success: function(data, textStatus, jqXHR)
