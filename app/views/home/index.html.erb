@@ -33,7 +33,6 @@
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-
 <div id="navbar-main">
   <!-- Fixed navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -51,7 +50,9 @@
           <li> <a href="#services" class="smoothScroll"> Services</a></li>
           <li> <a href="#team" class="smoothScroll"> Team</a></li>
           <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+          <li> <a href="#blog" class="smoothScroll">Recent Blogs</a></li>
           <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+          <li> <a href="/sign_in">Sign In</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -397,9 +398,25 @@
     <br>
   </div><!-- /row -->
 </div><!-- /container -->
+<div class="container" id="blog" name="blog">
+  <br>
+  <div class="row">
+    <br>
+    <h1 class="centered">WE ARE STORYTELLERS</h1>
+    <hr>
+    <br>
+    <br>
+  </div><!-- /row -->
 
-<%= render 'blog' %>
+  <div class="row" id="blog_row">
+    <%= render 'blog' %>
+  </div><!-- /row -->
+  <br>
+  <br>
+</div><!-- /container -->
 
+
+</div>
 <!-- ==== SECTION DIVIDER4 ==== -->
 <section class="section-divider textdivider divider4">
   <div class="container">

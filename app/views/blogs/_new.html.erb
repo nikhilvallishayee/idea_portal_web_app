@@ -1,0 +1,20 @@
+<%= form_for :blogs ,:html => {:id=>'blogs' }, url: blogs_path do |f| %>
+ 
+  <p>
+    <%= f.label :Title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :Description %><br>
+    <%= f.text_area :text %>
+  </p>
+    
+  <p>
+<!-- 
+    <%= f.submit %>
+   -->
+   <input type="button" name="btn-save" value="Create Blog" id="btn-blog-save"> 
+  </p>
+ 
+<% end %> 

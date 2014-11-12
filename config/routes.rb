@@ -1,12 +1,26 @@
 IdeaPortalWebApp::Application.routes.draw do
   get "beings/latestIndex"
 
-  get "blog/recentIndex"
+  get "blogs/recentIndex"
 
   root :to => 'home#index'
 
   resources :beings
+  resources :blogs
   resources :dashboard
+  
+  resource :session,
+    controller: 'sessions',
+    only: [:create,:new,:destroy]
+
+  get '/sign_in' => 'sessions#new', as: 'sign_in'
+  post '/sign_in' => 'sessions#create', as: 'sign_in'
+  delete '/sign_out' => 'sessions#destroy', as: 'sign_out'
+  if Clearance.configuration.allow_sign_up?
+    get '/sign_up' => 'beings#index', as: 'sign_up'
+  end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
