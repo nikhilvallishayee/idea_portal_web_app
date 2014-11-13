@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20141113103356) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.string   "is_team_member"
+    t.boolean  "is_team_member"
     t.integer  "user_id"
     t.string   "password"
     t.string   "encrypted_password"

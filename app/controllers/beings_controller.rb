@@ -5,12 +5,20 @@ class BeingsController < ApplicationController
 
 
   def index
-  	@beings = Being.last(5)
-    render :json =>{
-  		:status => :ok,
-  		:message => "Success",
-  		:beings => @beings.to_json(:only => [:id,:name,:short_description,:link_facebook,:link_flickr,:link_twitter], :methods => [:photo_url])
-  	}
+  	@beings = Being.where(is_team_member: true).last(5)
+
+    if @beings
+      render :json =>{
+    		:status => :ok,
+    		:message => "Success",
+    		:beings => @beings.to_json(:only => [:id,:name,:short_description,:link_facebook,:link_flickr,:link_twitter], :methods => [:photo_url])
+    	}
+    else
+       render :json =>{
+        :status => :unprocessable_entity,
+        :message => "Failure",
+      } 
+    end
   end
  
 
