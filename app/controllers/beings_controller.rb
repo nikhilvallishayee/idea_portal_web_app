@@ -1,5 +1,5 @@
 class BeingsController < ApplicationController
-  before_filter :add_user ,:only => :create
+  #before_filter :add_user ,:only => :create
   def new
   end
 
@@ -13,16 +13,9 @@ class BeingsController < ApplicationController
   	}
   end
  
-  def add_user
-      if User.create({:email => params[:beings][:email], :password => "abcd1234"})
-        @user=User.find_by_email(params[:beings][:email])
-        params[:beings][:user_id] = @user.id
-      else
-            console.log("Failed");
-      end 
-  end
 
   def create
+    params[:beings][:password] = "foo"
     @being = Being.new(params[:beings])
     p params[:beings]
   	if @being.save
