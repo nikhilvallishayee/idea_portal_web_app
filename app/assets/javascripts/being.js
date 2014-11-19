@@ -6,7 +6,7 @@ $("document").ready(function(){
 });
 function getLatestBeingInstances(){
   $.ajax({
-    url : '/beings/index',
+    url : '/beings/latestBeings',
     type: "GET",
     format: "JSON",
     success: function(data, textStatus, jqXHR)
@@ -27,7 +27,7 @@ function getLatestBeingInstances(){
     },
     error: function (jqXHR, textStatus, errorThrown)
     {
-      alert ( 'Something went wrong!', errorThrown);
+      alert ( 'Something went wrong!'+errorThrown, errorThrown);
     }
   });
 }
@@ -44,7 +44,7 @@ function createBeing(){
       window.location.href="/sign_in";
     },
     error:function(jqXHR,textStatus,errorThrown){
-      alert ( 'Something went wrong!', errorThrown);
+      alert ( 'Something went wrong!'+errorThrown, errorThrown);
     }
   });
 }

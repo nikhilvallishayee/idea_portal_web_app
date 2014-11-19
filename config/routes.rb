@@ -1,7 +1,7 @@
 IdeaPortalWebApp::Application.routes.draw do
-  get "beings/index"
+  get "beings/latestBeings"
 
-  get "blogs/index"
+  get "blogs/latestBlogs"
 
   root :to => 'home#index'
 
@@ -9,6 +9,8 @@ IdeaPortalWebApp::Application.routes.draw do
   resources :blogs
   resources :dashboard
   
+  get "blogs/:id/test" => 'blogs#test'
+
   resource :session,
     controller: 'sessions',
     only: [:create,:new,:destroy]
@@ -17,7 +19,7 @@ IdeaPortalWebApp::Application.routes.draw do
   post '/sign_in' => 'sessions#create', as: 'sign_in'
   delete '/sign_out' => 'sessions#destroy', as: 'sign_out'
 
-    get '/sign_up' => 'beings#new', as: 'sign_up'
+  get '/sign_up' => 'beings#new', as: 'sign_up'
   
 
   # The priority is based upon order of creation:

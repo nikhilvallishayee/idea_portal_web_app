@@ -3,8 +3,8 @@ class BeingsController < ApplicationController
   def new
   end
 
-
-  def index
+  
+  def latestBeings
   	@beings = Being.where(is_team_member: true).last(5)
 
     if @beings

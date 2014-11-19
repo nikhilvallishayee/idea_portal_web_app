@@ -26,7 +26,7 @@ class SessionsController < Clearance::SessionsController
   private
 
   def url_after_create
-   redirect_to url_for(:controller => :dashboard, :action => 'index')
+   redirect_to url_for(:controller => :blogs, :action => 'index')
   end
 
   def url_after_destroy
