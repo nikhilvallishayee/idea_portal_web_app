@@ -4,21 +4,16 @@
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
-<meta charset="utf-8"/>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="" name="description"/>
-<meta content="" name="author"/>
-<!-- BEGIN GLOBAL MANDATORY STYLES -->
-<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/> -->
-
-
-<link href="assets/bootstrap.css" rel="stylesheet">
-
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/> -->
+  <link href="assets/bootstrap.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-<link href="assets/main.css" rel="stylesheet">
-
+  <link href="assets/main.css" rel="stylesheet">
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -28,104 +23,101 @@
   <!-- Fixed navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        
-      </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
-            <li>
-	            <% if signed_in? -%>
-	      			<%= button_to ('Sign Out'), sign_out_path, :method => :delete %>
-	    		<% end -%>
-           	</li>
-           	
-  	  </div>	        
+          <% if signed_in? -%>
+              <li>
+                <%= link_to ('Sign Out'), sign_out_path, :method => :delete %>
+              </li>
+              <li>
+                <input type ='hidden' id='user_id' value ='<%= current_user.id%>'/>
+              </li>
+          <% else %>
+              <li>
+                <a data-toggle="modal" href="#sign-in">Sign in</a>
+              </li>
+              <li>
+                <input type ='hidden' id='user_id' value =''/>
+              </li>
+          <% end -%>
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
+
+        <ul class="nav navbar-nav">
+          <% if signed_in? -%>
+              <li class="start">
+                <a href="#" class="a-color" id="a-add-blog">
+                  Add Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" class="a-color" id="a-read-blogs">
+                  Read Blogs
+                </a>
+              </li>
+          <% end %>
+        </ul>
+      </div>
+    </div><!--/.nav-collapse -->
   </div>
+</div>
 </div>
 <!-- END HEADER -->
 
 <!-- BEGIN CONTAINER -->
 <div class="container">
-	<div class="row">
-	<% if signed_in? -%>
-		<div class="col-lg-3" id="side-bar">
-			<div class="navbar navbar-inverse vertical-nav">
-				<div class="navbar-collapse collapse">
-					<!-- BEGIN SIDEBAR MENU -->
-					<ul class="nav nav-stacked">
-		  				<li class="start">
-							<a href="#" class="a-color" id="a-add-blog">
-								Add Blog
-							</a>
-						</li>
-						<li>
-							<a href="#" class="a-color" id="a-read-blogs">
-								Read Blogs
-							</a>
-						</li>
-						<li>
-							<input type ='hidden' id='user_id' value ='<%= current_user.id%>'/>
-							
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>	
-	<% end %>	
+  <div class="row">
+    <div class="col-lg-offset-3 margin-set">
+      <div class="hidden" id="add-blog">
+        <%= render 'blogs/new' %>
+      </div>
+    </div>
+    <div class="col-lg-12 margin-set">
+      <table id="all-blogs" class="col-lg-12">
+        <tbody>
+        <tr id="blog_template" class="blog-bg hidden">
+          <td class="col-lg-2">
+            <div class="centered">
+              <br>
+              <p><img class="img img-circle being-image" src="assets/team/team04.jpg" width="60px" height="60px"></p>
+              <h4 class="being-title">Jaye Smith</h4>
+              <h5 class="blog-pub-date">Published Aug 30.</h5>
+            </div>
+          </td>
+          <td class="col-lg-8"  style="padding-left:0px;padding-right:0px">
+            <div class="blog-content">
+              <h2 class="blog-title">We Define Success</h2>
+              <p class="blog-description">Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.
+                In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
+              <p><a href="#" class="icon icon-link read-more-btn" data-blog-id=""> Read More</a></p>
+              <br>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
 
-		<div class="col-lg-offset-4 " style="margin-top:28px">
-			<div class="hidden" id="add-blog">
-				<%= render 'blogs/new' %>
-			</div>		
-		</div>
-		<div class="col-lg-offset-3">
-			<table id="all-blogs">
-				<tbody>
-					<tr id="blog_template" class="blog-bg hidden">
-						<td class="col-lg-2">
-						      <div class="centered">
-						        <br>
-						        <p><img class="img img-circle being-image" src="assets/team/team04.jpg" width="60px" height="60px"></p>
-						        <h4 class="being-title">Jaye Smith</h4>
-						        <h5 class="blog-pub-date">Published Aug 30.</h5>
-						      </div>
-						</td>
-						<td class="col-lg-8"  style="padding-left:0px;padding-right:0px">
-						      <div class="blog-content">
-						        <h2 class="blog-title">We Define Success</h2>
-							    <p class="blog-description">Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.
-						        In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
-						        <p><a href="#" class="icon icon-link read-more-btn" data-blog-id=""> Read More</a></p>
-						        <br>
-						      </div>
-						   
-						</td>
-					</tr>
-				</tbody>
 
-			</table>
-    	</div>
-    	
-		<div class="col-lg-12" id="read-more-blog" style="margin-top:55px">
-			<div id="show_blog_template" class="hidden">
-				<div class="col-lg-12">
-					<h1 class="blog-title"></h1>
-				</div>
-				<div class="col-lg-12">
-					<label class="blog-pub-date"></label>
-					<label>Author- </label> <label class="being-title"></label>
-		   		</div>
-		   		<div class="col-lg-12">
-		   			<p class="blog-description"></p>
-				</div>
-		   	</div>
-		</div>	
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            </button>
+            <h4 class="modal-title">Sign in</h4>
+          </div>
+          <div class="modal-body">
+            <%= render 'sessions/new' %>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </div>
 
-    	
-	<script src="assets/bootstrap.min.js" type="text/javascript"></script>
-	</body>
-	
+
+  <script src="assets/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
 </html>

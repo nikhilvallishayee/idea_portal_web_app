@@ -1,0 +1,11 @@
+<%= form_for :comment,:html => { :id => 'comment' } do |f| %>
+    <div class="row add-comment">
+      <div class="col-lg-12 form-group">
+        <%= f.text_area :body ,rows:3 ,class:'form-control' %>
+        <br>
+        <div class="col-lg-offset-6" style="float:right">
+          <input type="button" id="btn-comment-save" value="Post Comment" class="btn btn-primary"></input>
+        </div>
+      </div>
+    </div>
+<% end %>

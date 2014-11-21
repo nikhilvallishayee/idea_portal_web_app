@@ -1,4 +1,127 @@
-<h1><%= @blog.title %></h1>
-<p><strong>Description: </strong> <%= @blog.text %><br />
-<strong>Created Date:</strong> <%= @blog.created_at %><br />
-</p>
+<!DOCTYPE html>
+
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed">
+
+<div id="navbar-main">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li>
+            <% if signed_in? -%>
+                <%= link_to ('Sign Out'), sign_out_path, :method => :delete %>
+                <input type ='hidden' id='current_user_id' value ='<%= current_user.id %>'/>
+            <% else %>
+                <li><a data-toggle="modal" href="#sign-in" id="signIn">Sign in</a></li>
+                <input type ='hidden' id='current_user_id' value =''/>
+            <% end -%>
+            </li>
+            </ul>
+      </div>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<div class="container">
+    <div class="row bl-title">
+      <div class="col-lg-12">
+          <h1><%= @blog.title %></h1>
+          <div class="col-lg-offset-6">
+            <h6 style="float:right"><%= @blog.created_at%></h6>
+          </div>
+      </div>
+
+    </div>
+  <br>
+    <div class="row">
+        <div class="col-lg-3" style="padding-right:25px">
+          <div id="author_row">
+            <div class="col-lg-12 blog-bg hidden" id="author_template">
+              <div class="author-header">
+                <h3>About Author</h3>
+              </div>
+              <div class="col-lg-4 centered">
+                <br>
+                <p><img class="img img-circle author-image" src="assets/team/team04.jpg" width="60px" height="60px"></p>
+                <h4 class="author-name">Jaye Smith</h4>
+              </div>
+              <div class="col-lg-offset-4">
+                <br>
+                <p class="author-description">Sample description about author</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-offset-3">
+            <div class="row bl-description">
+                <p><%= @blog.text %><br /></p>
+                <input type ='hidden' id='blogid' value ='<%= @blog.id%>'/>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-offset-2 col-lg-8">
+        <div class="row comments">
+          <div id ="addcomments">
+            <%= render 'comments/new' %>
+          </div>
+          <div id ="showcomments" class="hidden">
+            <h2>Comments</h2>
+            <table id="show_comments" class="col-lg-12">
+
+              <tbody>
+                  <tr id="comments_template" class="comments hidden">
+                    <td class="col-lg-8">
+                      <div class="comment-content">
+                        <p class="comment-text">Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.
+                          In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.
+                        </p>
+                      </div>
+                    </td>
+                    <td class="col-lg-2 blog-bg">
+                      <div class="centered">
+                        <br>
+                        <p><img class="img img-circle commenter-image" src="assets/team/team04.jpg" width="60px" height="60px"></p>
+                        <h4 class="commenter-name">Jaye Smith</h4>
+                        <h5 class="comment-date">Published Aug 30.</h5>
+                      </div>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Sign in</h4>
+        </div>
+        <div class="modal-body">
+          <%= render 'sessions/new' %>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+</body>

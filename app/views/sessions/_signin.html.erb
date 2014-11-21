@@ -1,5 +1,5 @@
 <div class="row">
-  <%= form_for :session, :url => session_path do |form| %>
+  <%= form_for :session, :html => {:id=>'session' },:url => session_path do |form| %>
             <div class="text-field">
         
                 <%= form.label :email %>
@@ -16,7 +16,7 @@
             <br> 
             <br> 
             <div class="submit-field ">
-                <%= form.submit "Sign in", class: "btn btn-primary" %>
+                <input type="button" name="btn-sign-in" value="Sign in" id="btn-sign-in">
             </div>
             <br> 
             <br> 

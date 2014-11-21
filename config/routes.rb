@@ -6,8 +6,9 @@ IdeaPortalWebApp::Application.routes.draw do
   root :to => 'home#index'
 
   resources :beings
-  resources :blogs
-  resources :dashboard
+  resources :blogs do
+    resources :comments
+  end
   
   get "blogs/:id/test" => 'blogs#test'
 

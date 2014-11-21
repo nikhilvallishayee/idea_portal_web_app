@@ -2,7 +2,6 @@ class BlogsController < ApplicationController
   def index
     @blogs=Blog.select("id, LEFT(text,10) as text ,title,created_at,updated_at,being_id")
     respond_to do |format|
-
       format.html 
       format.json { render :json =>{:status => :ok,:message => "Success",:blogs => @blogs}}
     end  
@@ -17,8 +16,9 @@ class BlogsController < ApplicationController
   	}
   end
   def create
-  	params[:blogs][:being_id] = current_user.id
-  	@blog = Blog.new(params[:blogs])
+   	params[:blog][:being_id] = current_user.id
+
+  	@blog = Blog.new(params[:blog])
    	
    	if @blog.save
    		render :json =>{

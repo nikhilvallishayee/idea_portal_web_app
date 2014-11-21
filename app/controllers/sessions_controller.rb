@@ -6,10 +6,10 @@ class SessionsController < Clearance::SessionsController
     @user = authenticate(params)
     sign_in(@user) do |status|
       if status.success?
-        url_after_create
+        render :json =>{:status => :ok,:message => "Success"}
       else
         flash.now.notice = status.failure_message
-        render template: 'sessions/new', status: :unauthorized
+        render :json =>{:status => :unprocessable_entity,:message => "Failure"}
       end
     end
   end
@@ -24,10 +24,6 @@ class SessionsController < Clearance::SessionsController
   end
 
   private
-
-  def url_after_create
-   redirect_to url_for(:controller => :blogs, :action => 'index')
-  end
 
   def url_after_destroy
     root_path
