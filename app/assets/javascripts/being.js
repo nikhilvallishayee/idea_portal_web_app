@@ -41,7 +41,8 @@ function createBeing(){
     processData: false,
     contentType: false ,
     success: function(data, textStatus, jqXHR){
-      window.location.href="/sign_in";
+      alert('Sign-Up success..!! Sign-in with ur credentials...!!')
+      window.location.href="/";
     },
     error:function(jqXHR,textStatus,errorThrown){
       alert ( 'Something went wrong!'+errorThrown, errorThrown);

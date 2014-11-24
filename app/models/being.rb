@@ -12,7 +12,7 @@ class Being < ActiveRecord::Base
     :url  => "/assets/images/beings/:id/:style/:basename.:extension",
     :path => ":rails_root/public/assets/images/beings/:id/:style/:basename.:extension"
 
-  validates_presence_of :email, :name, :short_description
+  validates_presence_of :email, :name, :short_description 
   validates_attachment_presence :photo
   validates_attachment_size :photo, :less_than => 5.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpeg','image/jpg', 'image/png']

@@ -23,8 +23,6 @@ $("document").ready(function(){
 });
 
 function getBeingDetails(id){
-
-
     $.ajax({
         url : '/beings/'+id,
         type: "GET",
@@ -48,7 +46,6 @@ function getAllBlogs(){
         format: "JSON",
         success: function(data, textStatus, jqXHR)
         {
-
             $.each(data.blogs, function(index, blog){
                 if(!$("#blog_"+blog.id).length)
                 {
@@ -78,13 +75,11 @@ function saveBlog()
             console.log(data);
             $("#add-blog").addClass("hidden");
             $("#all-blogs").removeClass("hidden");
-
             getAllBlogs();
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
             alert ( 'Something went wrong!', errorThrown);
         }
-
     });
 }

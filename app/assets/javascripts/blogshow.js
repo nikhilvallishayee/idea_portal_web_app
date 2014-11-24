@@ -3,8 +3,6 @@ $(document).ready(function(){
         getComments($("#blogid").val());
         getblog($("#blogid").val());
     }
-
-
     $("#btn-comment-save").click(function(){
         if($("#current_user_id").val()=="") {
           $("#signIn")[0].click()
@@ -13,7 +11,6 @@ $(document).ready(function(){
             saveComment($("#blogid").val());
         }
     });
-
 });
 function getComments(id){
     $.ajax({
@@ -30,7 +27,6 @@ function getComments(id){
         {
             alert ( 'Something went wrong!'+errorThrown, errorThrown);
         }
-
     });
 }
 function showComments(data){
@@ -72,7 +68,6 @@ function getblog(id){
         {
             alert ( 'Something went wrong!'+errorThrown, errorThrown);
         }
-
     });
 }
 function getAuthorDetails(id){
