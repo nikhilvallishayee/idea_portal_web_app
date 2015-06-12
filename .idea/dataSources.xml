@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="647277164">
-    <data-source source="LOCAL" name="Rails idea_portal_web_app: development" uuid="697e0425-7669-460f-a88b-3d7dfc28a419">
-      <driver-ref>mysql</driver-ref>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/idea_portal_development</jdbc-url>
-      <user-name>root</user-name>
-      <libraries>
-        <library>
-          <url>file://</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="Rails idea_portal_web_app: production" uuid="be8a26d2-3a2c-4193-b185-f9891b132157">
-      <driver-ref>mysql</driver-ref>
+  <component name="DataSourceManagerImpl" format="xml" hash="642540580">
+    <data-source source="LOCAL" name="Rails idea_portal_web_app: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="be8a26d2-3a2c-4193-b185-f9891b132157">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/idea_portal_production</jdbc-url>
       <user-name>root</user-name>
@@ -23,8 +11,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails idea_portal_web_app: test" uuid="7f79c11d-82ea-410b-873b-4613a9485591">
-      <driver-ref>mysql</driver-ref>
+    <data-source source="LOCAL" name="Rails idea_portal_web_app: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="7f79c11d-82ea-410b-873b-4613a9485591">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/idea_portal_test</jdbc-url>
       <user-name>root</user-name>
