@@ -4,8 +4,8 @@
     <list default="true" id="e322b92f-e97b-4f7d-b015-414991efdf72" name="Default" comment="" />
     <ignored path="idea_portal_web_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/app/views/home/index.html.erb" changelist="e322b92f-e97b-4f7d-b015-414991efdf72" time="1434311309760" ignored="false" />
-    <file path="$PROJECT_DIR$/app/views/layouts/application.html.erb" changelist="e322b92f-e97b-4f7d-b015-414991efdf72" time="1434311309761" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/home/index.html.erb" changelist="e322b92f-e97b-4f7d-b015-414991efdf72" time="1434311438947" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/layouts/application.html.erb" changelist="e322b92f-e97b-4f7d-b015-414991efdf72" time="1434311438947" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.77759194">
+            <state line="31" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="152" column="0" selection-start="3486" selection-end="3486" vertical-scroll-proportion="0.74916387">
               <folding />
             </state>
           </provider>
@@ -55,6 +64,7 @@
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -236,7 +246,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.77759194">
+        <state line="31" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="0" selection-start="3486" selection-end="3486" vertical-scroll-proportion="0.74916387">
           <folding />
         </state>
       </provider>
