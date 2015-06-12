@@ -1,6 +1,14 @@
 class BlogsController < ApplicationController
   def index
-  	@blogs = Blog.last(2)
+    @blogs=Blog.select("id, LEFT(text,10) as text ,title,created_at,updated_at,being_id")
+    respond_to do |format|
+      format.html 
+      format.json { render :json =>{:status => :ok,:message => "Success",:blogs => @blogs}}
+    end  
+  end
+
+  def latestBlogs
+  	@blogs = Blog.select("id, LEFT(text,10) as text ,title,created_at,updated_at,being_id").last(2)
   	render :json =>{
   		:status => :ok,
   		:message => "Success",
@@ -8,8 +16,9 @@ class BlogsController < ApplicationController
   	}
   end
   def create
-  	params[:blogs][:being_id] = current_user.id
-  	@blog = Blog.new(params[:blogs])
+   	params[:blog][:being_id] = current_user.id
+
+  	@blog = Blog.new(params[:blog])
    	
    	if @blog.save
    		render :json =>{
@@ -25,5 +34,13 @@ class BlogsController < ApplicationController
   	end		
   end
   def show
+    @blog = Blog.find(params[:id])
+    respond_to do |format|
+
+      format.html 
+      format.json { render :json =>{:status => :ok,:message => "Success",:blog => @blog}}
+    end  
   end
+  
+  
 end

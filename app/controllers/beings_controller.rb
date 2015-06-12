@@ -1,28 +1,29 @@
 class BeingsController < ApplicationController
-  before_filter :add_user ,:only => :create
+  #before_filter :add_user ,:only => :create
   def new
   end
 
+  
+  def latestBeings
+  	@beings = Being.where(is_team_member: true).last(5)
 
-  def index
-  	@beings = Being.last(5)
-    render :json =>{
-  		:status => :ok,
-  		:message => "Success",
-  		:beings => @beings.to_json(:only => [:id,:name,:short_description,:link_facebook,:link_flickr,:link_twitter], :methods => [:photo_url])
-  	}
+    if @beings
+      render :json =>{
+    		:status => :ok,
+    		:message => "Success",
+    		:beings => @beings.to_json(:only => [:id,:name,:short_description,:link_facebook,:link_flickr,:link_twitter], :methods => [:photo_url])
+    	}
+    else
+       render :json =>{
+        :status => :unprocessable_entity,
+        :message => "Failure",
+      } 
+    end
   end
  
-  def add_user
-      if User.create({:email => params[:beings][:email], :password => "abcd1234"})
-        @user=User.find_by_email(params[:beings][:email])
-        params[:beings][:user_id] = @user.id
-      else
-            console.log("Failed");
-      end 
-  end
 
   def create
+    params[:beings][:password] = "foo"
     @being = Being.new(params[:beings])
     p params[:beings]
   	if @being.save
