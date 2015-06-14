@@ -19,8 +19,8 @@ bg/divider3.jpg: bg/divider3-f724eeb383188a4494da06f4c20cdd54.jpg
 bg/divider3/index.jpg: bg/divider3-f724eeb383188a4494da06f4c20cdd54.jpg
 bg/divider4.jpg: bg/divider4-f1b3e23d7cd63a3823cb329a1c79e540.jpg
 bg/divider4/index.jpg: bg/divider4-f1b3e23d7cd63a3823cb329a1c79e540.jpg
-bg/divider6.jpg: bg/divider6-fb7f418b783d88a39cec053f7dc2de80.jpg
-bg/divider6/index.jpg: bg/divider6-fb7f418b783d88a39cec053f7dc2de80.jpg
+bg/divider6.jpg: bg/divider6-1e718890600bf3431b98266e5f682c0e.jpg
+bg/divider6/index.jpg: bg/divider6-1e718890600bf3431b98266e5f682c0e.jpg
 header_bg.jpg: header_bg-2d266a82cd8afeb7276dcc110d4e5bad.jpg
 header_bg/index.jpg: header_bg-2d266a82cd8afeb7276dcc110d4e5bad.jpg
 iphone.png: iphone-6c41dc6fdb8da9e0be17c3978e402f65.png
@@ -109,6 +109,10 @@ portfolio/reshotel.png: portfolio/reshotel-aa5a1b3f239785788321808698fa2f0b.png
 portfolio/reshotel/index.png: portfolio/reshotel-aa5a1b3f239785788321808698fa2f0b.png
 portfolio/varunaiyer.png: portfolio/varunaiyer-d544242f82f30c502bc348ff166ff999.png
 portfolio/varunaiyer/index.png: portfolio/varunaiyer-d544242f82f30c502bc348ff166ff999.png
+team/js.jpg: team/js-c0ca32eaccb703778c17070f9fa853e7.jpg
+team/js/index.jpg: team/js-c0ca32eaccb703778c17070f9fa853e7.jpg
+team/natalia.png: team/natalia-8c01eb81544788dcd2da0f9d235abbfd.png
+team/natalia/index.png: team/natalia-8c01eb81544788dcd2da0f9d235abbfd.png
 team/nikhil.jpg: team/nikhil-e145c96e628edb785fb898b239080a72.jpg
 team/nikhil/index.jpg: team/nikhil-e145c96e628edb785fb898b239080a72.jpg
 team/ronak.jpg: team/ronak-958563dc74b5d9286cf5ca0b5f89ddca.jpg
