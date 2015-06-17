@@ -48,7 +48,6 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.10.1, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.2.1, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.9.1, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.2.0, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.5, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.2, RVM: ruby-2.0.0-p247 [reshotel]) [gem]" level="application" />
