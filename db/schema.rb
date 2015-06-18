@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141120060327) do
+ActiveRecord::Schema.define(:version => 20150618114337) do
+
+  create_table "backend_users", :force => true do |t|
+    t.string   "email"
+    t.string   "display_name"
+    t.string   "encrypted_password", :limit => 128
+    t.string   "salt",               :limit => 128
+    t.string   "confirmation_token", :limit => 128
+    t.string   "remember_token",     :limit => 128
+    t.string   "roles"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+  end
 
   create_table "beings", :force => true do |t|
     t.string   "name"
