@@ -55,7 +55,25 @@
 
         </ul>
         <ul class="nav navbar-nav pull-right">
-          <li> <a data-toggle="modal" href="#sign-in">Sign in</a></li>
+          <% if signed_in? -%>
+              <li>
+                <%= link_to ('Sign Out'), sign_out_path, :method => :delete %>
+              </li>
+              <li>
+                <%= link_to t('.Add People'), add_people_path , :target => "_blank" %>
+              </li>
+              <li>
+                <input type ='hidden' id='user_id' value ='<%= current_user.id%>'/>
+              </li>
+          <% else %>
+              <li>
+                <a data-toggle="modal" href="#sign-in">Sign in</a>
+              </li>
+              <li>
+                <input type ='hidden' id='user_id' value =''/>
+              </li>
+          <% end -%>
+        </ul>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -485,7 +503,7 @@
       <h3>Contact Information</h3>
       <p><span class="icon icon-home"></span> 23, 3rd main, 3rd cross, Brindavan Ext-1, Mysore<br/>
         <span class="icon icon-phone"></span> +91 8197 309 583 <br/>
-        <span class="icon icon-mobile">
+        <span class="icon icon-mobile"></span>
         <span class="icon icon-envelop"></span> <a href="#"> nikhilvallishayee@gmail.com</a> <br/>
         <span class="icon icon-twitter"></span> <a href="https://twitter.com/vallishayee" target = "_blank"> @vallishayee </a> <br/>
         <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/nikhil.vallishayee" target="_blank"> IdeaPortal on FB </a> <br/>
