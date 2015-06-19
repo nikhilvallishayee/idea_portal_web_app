@@ -1,5 +1,6 @@
 IdeaPortalWebApp::Application.routes.draw do
   get "beings/latestBeings"
+  get '/add_people' => 'beings#new', as: 'add_people'
 
   get "blogs/latestBlogs"
 
@@ -20,8 +21,7 @@ IdeaPortalWebApp::Application.routes.draw do
   post '/sign_in' => 'sessions#create', as: 'sign_in'
   delete '/sign_out' => 'sessions#destroy', as: 'sign_out'
 
-  get '/add_people' => 'beings#new', as: 'add_people'
-  
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

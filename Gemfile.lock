@@ -55,6 +55,10 @@ GEM
       bcrypt
       email_validator (~> 1.4)
       rails (>= 3.1)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -83,6 +87,11 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.18.2)
     polyglot (0.3.5)
     rack (1.4.5)
@@ -110,6 +119,7 @@ GEM
     rake (10.3.2)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.4)
     sass (3.4.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -147,6 +157,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   highline
   jquery-rails
+  paperclip (~> 4.2.0)
   rails (= 3.2.18)
+  rmagick (~> 2.13.1)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
