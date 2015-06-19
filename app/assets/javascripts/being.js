@@ -1,4 +1,5 @@
 $("document").ready(function(){
+
   getLatestBeingInstances();
   $("#btn-being-save").click(function() {
     createBeing();

@@ -1,0 +1,82 @@
+<%= form_for :beings,:html => { :multipart => true , :id=>'beings' }, url: beings_path do |f| %>
+    <div class="form-group">
+      <%= f.label :name , class:'col-sm-3 control-label' %>
+      <div class="col-sm-9">
+        <%= f.text_field :name , class:'form-control'%>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :short_description , class:'col-sm-3 control-label' %>
+      <div class="col-sm-9">
+        <%= f.text_field :short_description ,class:'form-control'%>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :email , class:'col-sm-3 control-label'%>
+      <div class="col-sm-9">
+        <%= f.text_field :email , class:'form-control'%>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :phone , class:'col-sm-3 control-label'%>
+      <div class="col-sm-9">
+        <%= f.text_field :phone , class:'form-control'%>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :link_facebook , class:'col-sm-3 control-label'%>
+      <div class="col-sm-9">
+        <%= f.text_field :link_facebook ,class:'form-control' %>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :link_twitter , class:'col-sm-3 control-label'%>
+      <div class="col-sm-9">
+        <%= f.text_field :link_twitter , class:'form-control' %>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :link_flickr , class:'col-sm-3 control-label' %>
+      <div class="col-sm-9">
+        <%= f.text_field :link_flickr ,class:'form-control' %>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <%= f.label :is_team_member , class:'col-sm-3 control-label' %>
+      <div class="col-sm-9">
+        <%= f.check_box :is_team_member  %>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class ="col-sm-offset-3">
+      <input type="button" name="btn-save" class="btn btn-default" value="Create Being" id="btn-being-save">
+    </div>
+    <br>
+    <br>
+    <br>
+<% end %>
+
+

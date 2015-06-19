@@ -1,6 +1,6 @@
 class Being < ActiveRecord::Base
   # include Clearance::User
-  attr_accessible :email, :password, :image_url, :link_facebook, :link_flickr, :link_twitter, :name, :phone, :short_description ,:photo,:user_id
+  attr_accessible :email, :password, :image_url, :link_facebook, :link_flickr, :link_twitter, :name, :phone, :short_description ,:photo,:user_id,:is_team_member
 
 
   has_many :blogs
