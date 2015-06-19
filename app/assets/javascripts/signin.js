@@ -1,12 +1,12 @@
 $(document).ready(function(){
    $("#btn-sign-in").click(function(){
        console.log("hello....");
-    signInUser();
+        signInUser();
    });
 });
 function signInUser(){
     var data=$('#session').serialize();
-    console.log("hjdgfhgd");
+    console.log("hello again");
     $.ajax({
         url : '/sign_in',
         type: "POST",
@@ -20,7 +20,6 @@ function signInUser(){
              else{
                  alert("Incorrect UserId or Password");
              }
-
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
