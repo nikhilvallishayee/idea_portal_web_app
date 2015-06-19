@@ -1,10 +1,12 @@
 $(document).ready(function(){
    $("#btn-sign-in").click(function(){
+       console.log("hello....");
     signInUser();
    });
 });
 function signInUser(){
     var data=$('#session').serialize();
+    console.log("hjdgfhgd");
     $.ajax({
         url : '/sign_in',
         type: "POST",
