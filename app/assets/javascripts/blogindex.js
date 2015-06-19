@@ -3,7 +3,7 @@ $("document").ready(function(){
     getAllBlogs();
 
     if($('#user_id').val()!='' && $('#user_id').val()!=undefined)
-        getBeingDetails($('#user_id').val());
+        //getBeingDetails($('#user_id').val());
 
     $("#a-add-blog").click(function(){
         $("#add-blog").removeClass("hidden");
