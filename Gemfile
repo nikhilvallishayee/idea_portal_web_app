@@ -44,5 +44,5 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'rmagick' ,'~> 2.13.1'
-gem 'paperclip', '~> 4.2.0'
+# gem 'rmagick' ,'~> 2.13.1'
+# gem 'paperclip', '~> 4.2.0'
