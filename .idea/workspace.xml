@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4cdb4bab-dc56-4dad-bc81-ea2e7e7b6dce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="idea_portal_web_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +49,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6910891" vertical-offset="7886" max-vertical-offset="8490">
-              <caret line="549" column="69" selection-start-line="549" selection-start-column="69" selection-end-line="549" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.78019804" vertical-offset="7886" max-vertical-offset="8400">
+              <caret line="552" column="0" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -797,7 +795,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -860,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6910891" vertical-offset="7886" max-vertical-offset="8490">
-          <caret line="549" column="69" selection-start-line="549" selection-start-column="69" selection-end-line="549" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.78019804" vertical-offset="7886" max-vertical-offset="8400">
+          <caret line="552" column="0" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
           <folding />
         </state>
       </provider>
