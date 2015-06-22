@@ -3,7 +3,12 @@ $("document").ready(function(){
   $("#btn-being-save").click(function() {
     createBeing();
   });
+    $("#beings_photo").change(function(){
+        readURL(this);
+    });
+
 });
+
 function getLatestBeingInstances(){
   $.ajax({
     url : '/beings/latestBeings',
@@ -49,3 +54,17 @@ function createBeing(){
     }
   });
 }
+
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#preview_image').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
